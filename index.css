@@ -1,0 +1,600 @@
+/* Reset dan Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #1c2b4b;
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: #0b0c50;
+  color: #fff;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar li {
+  margin-left: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff7fa8;
+}
+
+/* Hamburger Menu - Hidden by default */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.3s;
+  border-radius: 3px;
+}
+
+/* Hamburger Animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* IDENTITAS */
+.identitas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  background-color: #fff;
+  min-height: auto;
+}
+
+#identitas {
+  scroll-margin-top: 100px;
+}
+
+#identitas::before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin-top: -100px;
+}
+
+.identitas .text {
+  flex: 1;
+  transform: none;
+  margin-top: -60px;
+}
+
+.identitas .nama {
+  color: #ff7fa8;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.identitas .nim {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.identitas .btn {
+  background-color: #ff7fa8;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.identitas .btn:hover {
+  background-color: #ff5e91;
+}
+
+.identitas .foto img {
+  width: 340px;
+  border-radius: 20px;
+  margin-left: 50px;
+  transform: translateY(-150px);
+}
+
+/* BIODATA */
+.biodata {
+  background-color: #ffe9f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  margin: 0;
+  padding: 0;
+  scroll-margin-top: 80px;
+}
+
+.biodata-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffe9f0;
+  padding: 20px 50px;
+  border-radius: 10px;
+  max-width: 900px;
+  gap: 50px;
+}
+
+.biodata-foto img {
+  width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+.biodata-teks {
+  color: #1c2b4b;
+  font-size: 15px;
+  line-height: 1.9;
+  text-align: left;
+  flex: 1;
+}
+
+.biodata-teks p {
+  margin-bottom: 10px;
+}
+
+.biodata-teks strong {
+  color: #000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* PENDIDIKAN */
+.pendidikan {
+  background-color: #fff;
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-margin-top: 80px;
+}
+
+.pendidikan-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 60px;
+}
+
+.pendidikan-teks {
+  flex: 1;
+  text-align: left;
+}
+
+.pendidikan-teks h2 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.pendidikan-teks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pendidikan-teks li {
+  color: #1c2b4b;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.pendidikan-teks li strong {
+  color: #000;
+  font-weight: 600;
+}
+
+.pendidikan-foto {
+  flex: 1;
+}
+
+.pendidikan-foto img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* BAGIAN UMUM */
+section {
+  padding: 80px;
+  text-align: center;
+}
+
+h2 {
+  color: #ff7fa8;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* PROYEK */
+.proyek {
+  background-color: #ffe9f0;
+  padding: 80px;
+  text-align: center;
+}
+
+.proyek h2 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.proyek-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proyek-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.proyek-image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.proyek-image img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.proyek-desc {
+  text-align: center;
+}
+
+.proyek-desc p {
+  color: #1c2b4b;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ORGANISASI */
+.organisasi {
+  background-color: #fff;
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-margin-top: 80px;
+}
+
+.organisasi-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 60px;
+}
+
+.organisasi-foto {
+  flex: 1;
+}
+
+.organisasi-foto img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.organisasi-teks {
+  flex: 1;
+  text-align: left;
+}
+
+.organisasi-teks h2 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.organisasi-teks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.organisasi-teks li {
+  color: #1c2b4b;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.organisasi-teks li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #000;
+  font-weight: bold;
+}
+
+/* KONTAK */
+.kontak {
+  background-color: #ffe9f0;
+  padding: 80px;
+  text-align: center;
+}
+
+.kontak h2 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.kontak-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.kontak-item {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kontak-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.kontak-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: #1c2b4b;
+  font-size: 16px;
+}
+
+.kontak-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.kontak-link span {
+  font-weight: 500;
+}
+
+.kontak-link:hover span {
+  color: #ff7fa8;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #0b0c50;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer p:first-child {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  /* Show Hamburger, Hide Nav Links */
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: #0b0c50;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding: 20px 0;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .navbar li {
+    margin-left: 0;
+  }
+
+  .identitas {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 30px;
+  }
+
+  .identitas .text {
+    margin-top: 0;
+  }
+
+  .identitas .foto img {
+    margin: 20px 0 0;
+    width: 280px;
+    transform: translateY(0);
+  }
+
+  .biodata-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .biodata-foto img {
+    margin: 0 0 20px;
+  }
+
+  .biodata-teks {
+    text-align: center;
+  }
+
+  .pendidikan-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pendidikan-teks {
+    text-align: center;
+  }
+
+  .pendidikan-teks h2 {
+    text-align: center;
+  }
+
+  .pendidikan-foto img {
+    margin-top: 30px;
+    max-width: 100%;
+  }
+
+  .proyek {
+    padding: 60px 30px;
+  }
+
+  .proyek-card {
+    padding: 20px;
+  }
+
+  .proyek-desc p {
+    font-size: 14px;
+  }
+
+  .organisasi-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .organisasi-teks {
+    text-align: center;
+  }
+
+  .organisasi-teks h2 {
+    text-align: center;
+  }
+
+  .organisasi-teks li {
+    padding-left: 0;
+  }
+
+  .organisasi-teks li::before {
+    display: none;
+  }
+
+  .organisasi-foto img {
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+
+  .kontak {
+    padding: 60px 30px;
+  }
+
+  .kontak-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .kontak-link {
+    font-size: 14px;
+  }
+
+  .kontak-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
